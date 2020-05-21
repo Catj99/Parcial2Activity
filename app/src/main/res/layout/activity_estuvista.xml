@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/t1"
+    android:textSize="25dp"
+    android:textAlignment="center"
+    android:textStyle="italic"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/t1"
+        android:layout_marginBottom="-120dp"
+        android:textStyle="italic"
+        android:text="Su Historial de nota es:"
+        />
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/t2"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_alignRight="@+id/layer1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/t2"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignRight="@+id/layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layer3"
+        android:layout_alignTop="@+id/t2"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignRight="@+id/layer3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layer4"
+        android:layout_alignTop="@+id/t2"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</RelativeLayout>
